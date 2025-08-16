@@ -51,5 +51,13 @@
   | 4     | `NEUROGENESIS`     | Run the ANG growth phase on the seed network.        |
   | 5     | `REBUILD_NEUROGENESIS`     | Resume/reevaluate a saved ANG growth run.        |
 
+## Running SIC
 
+Enable SIC/pruning by adding one of these keys to the `.cfg`.
 
+| Key in `.cfg`  | Printed banner            | Effect            | Example line in `.cfg` |
+|---|---|---|---|
+| `SIC`          | `----- SIC -----`         | SIC only          | `SIC;`               |
+| `SIC_PRUNE`    | `----- SIC Prune -----`   | SIC then prune    | `SIC_PRUNE;`         |
+| `PRUNE_SIC`    | `----- Prune SIC -----`   | Prune then SIC    | `PRUNE_SIC;`         |
+| `PRUNE`        | `----- Prune -----`       | Prune only        | `PRUNE;`             |
