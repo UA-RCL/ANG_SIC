@@ -53,11 +53,11 @@
 
 ## Running SIC
 
-Enable SIC/pruning by adding one of these keys to the `.cfg`.
+* Enable SIC/pruning by adding one of these keys to the `.cfg`.
 
-| Key in `.cfg`  | Printed banner            | Effect            | Example line in `.cfg` |
-|---|---|---|---|
-| `SIC`          | `----- SIC -----`         | SIC only          | `SIC;`               |
-| `SIC_PRUNE`    | `----- SIC Prune -----`   | SIC then prune    | `SIC_PRUNE;`         |
-| `PRUNE_SIC`    | `----- Prune SIC -----`   | Prune then SIC    | `PRUNE_SIC;`         |
-| `PRUNE`        | `----- Prune -----`       | Prune only        | `PRUNE;`             |
+  | Key in `.cfg`  | Printed banner            | Effect            | Example line in `.cfg` |
+  |---|---|---|---|
+  | `SIC`          | `----- SIC -----`         | SIC only          | `SIC;`               |
+  | `SIC_PRUNE`    | `----- SIC Prune -----`   | SIC then prune    | `SIC_PRUNE;`         |
+  | `PRUNE_SIC`    | `----- Prune SIC -----`   | Prune then SIC    | `PRUNE_SIC;`         |
+  | `PRUNE`        | `----- Prune -----`       | Prune only        | `PRUNE;`             |
