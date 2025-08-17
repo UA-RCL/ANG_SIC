@@ -37,7 +37,7 @@
 * The `sic` binary requires a configuration file (`.cfg`) and a mode as input arguments.
 
   ```bash
-  ./sic -config ../config_files/MNIST_ANG.cfg -mode 0
+  ./sic -config ../config_files/MNIST_Small_CNN.cfg -mode 0
   ```
 
   Use `-mode <id>` to select behavior:
