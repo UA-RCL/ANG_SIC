@@ -1,4 +1,4 @@
-# Artificial Neurogenesis (ANG) and Synaptic Input Consolidation (SIC) 
+# Synaptic Input Consolidation (SIC) and Artificial Neurogenesis (ANG)
 
 ## Build Process
 
@@ -20,24 +20,24 @@
     ```bash
     make -j
     ```
-    This should generate the binary `ang` in the `build` directory.
+    This should generate the binary `sic` in the `build` directory.
 
 ## Datasets
 
 * Use the provided script to fetch the MNIST `.bin` files into `data/`.
 
-  From the data/MNIST folder:
+  From the /data/MNIST folder:
 
   ```bash
   ./mnist_download.sh
   ```
+  
+## Running SIC
 
-## Running ANG
-
-* The `ang` binary requires a configuration file (`.cfg`) and a mode as input arguments.
+* The `sic` binary requires a configuration file (`.cfg`) and a mode as input arguments.
 
   ```bash
-  ./ang -config ../config_files/MNIST_ANG.cfg -mode 0
+  ./sic -config ../config_files/MNIST_ANG.cfg -mode 0
   ```
 
   Use `-mode <id>` to select behavior:
@@ -50,10 +50,8 @@
   | 3     | `REBUILD_CLASS_LEVEL_NETWORK`     | Reload per-class networks and continue/evaluate.        |
   | 4     | `NEUROGENESIS`     | Run the ANG growth phase on the seed network.        |
   | 5     | `REBUILD_NEUROGENESIS`     | Resume/reevaluate a saved ANG growth run.        |
-
-## Running SIC
-
-* Enable SIC/pruning by adding one of these keys to the `.cfg`.
+  
+* Configure SIC/pruning by adding one of these keys to the `.cfg`.
 
   | Key in `.cfg`  | Printed banner            | Effect            | Example line in `.cfg` |
   |---|---|---|---|
@@ -61,3 +59,8 @@
   | `SIC_PRUNE`    | `----- SIC Prune -----`   | SIC then prune    | `SIC_PRUNE;`         |
   | `PRUNE_SIC`    | `----- Prune SIC -----`   | Prune then SIC    | `PRUNE_SIC;`         |
   | `PRUNE`        | `----- Prune -----`       | Prune only        | `PRUNE;`             |
+
+
+
+
+
